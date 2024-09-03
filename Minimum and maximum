@@ -1,0 +1,13 @@
+def find_min_max(arr):
+    if not arr: return None, None
+    min_value = arr[0]
+    max_value = arr[0]
+    for num in arr[1:]:
+        if num < min_value: min_value = num
+        if num > max_value: max_value = num
+    return min_value, max_value
+
+arr = [3, 5, 1, 9, 2, 8]
+min_val, max_val = find_min_max(arr)
+print("Minimum:", min_val)
+print("Maximum:", max_val)
