@@ -1,0 +1,4 @@
+def strStr(haystack,needle):return haystack.find(needle)
+haystack="sadbutsad"
+needle="sad"
+print(strStr(haystack,needle))
